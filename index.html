@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romagnolo — Dialetto dell'Emilia-Romagna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nunito:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
+  <style>
+    .proverb-item {
+      margin-bottom: 2.5rem !important;
+      padding-bottom: 2rem !important;
+      border-bottom: 1px solid #e0cfc0 !important;
+    }
+    .ref-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.91rem;
+      margin-top: 0.75rem;
+    }
+    .ref-table th {
+      background: #5c1800;
+      color: white;
+      font-family: 'Comfortaa', cursive;
+      font-weight: normal;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 0.55rem 0.85rem;
+      text-align: left;
+    }
+    .ref-table td {
+      padding: 0.5rem 0.85rem;
+      border-bottom: 1px solid #f0e4d4;
+      color: #2c1810;
+      line-height: 1.5;
+    }
+    .ref-table tr:last-child td { border-bottom: none; }
+    .ref-table tr:nth-child(even) td { background: #faf4ee; }
+    .ref-table td:first-child { color: #5c1800; font-style: italic; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <h1>Romagnolo</h1>
+      <p class="subtitle">Dialetto dell'Emilia-Romagna</p>
+      <p class="tagline">Preserving a living voice of Emilia-Romagna</p>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="proverbs">Proverbs</button>
+    <button class="tab-btn" data-tab="dialect">Dialect</button>
+    <button class="tab-btn" data-tab="images">Images</button>
+    <button class="tab-btn" data-tab="popular-culture">Popular Culture</button>
+    <button class="tab-btn" data-tab="about">About</button>
+  </nav>
+
+  <main class="content">
+    <section id="overview"        class="tab-panel active"></section>
+    <section id="proverbs"        class="tab-panel"></section>
+    <section id="dialect"         class="tab-panel"></section>
+    <section id="images"          class="tab-panel"></section>
+    <section id="popular-culture" class="tab-panel"></section>
+    <section id="about"           class="tab-panel"></section>
+  </main>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev lightbox-nav-btn">&#8592;</button>
+    <button class="lightbox-next lightbox-nav-btn">&#8594;</button>
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-info">
+      <p id="lightbox-caption" class="lightbox-caption"></p>
+      <p id="lightbox-description" class="lightbox-description"></p>
+      <span id="lightbox-counter" class="lightbox-counter"></span>
+    </div>
+  </div>
+
+  <script src="data.js?v=2"></script>
+  <script src="tables.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>

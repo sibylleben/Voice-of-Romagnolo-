@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nunito:ital,wght@0,400;0,600;1,400&family=Raleway:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #f0e8de; padding: 2rem 1.5rem; }
+
+    h1.page-title {
+      font-family: monospace;
+      font-size: 0.9rem;
+      color: #5c1800;
+      margin-bottom: 0.4rem;
+    }
+    .page-note {
+      font-family: monospace;
+      font-size: 0.78rem;
+      color: #9b7060;
+      margin-bottom: 2rem;
+    }
+    .rec-badge {
+      display: inline-block;
+      background: #c05020;
+      color: white;
+      font-family: monospace;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 3px;
+      vertical-align: middle;
+      margin-left: 0.5rem;
+    }
+
+    /* ── Option wrapper ── */
+    .option {
+      background: white;
+      border-radius: 10px;
+      padding: 1.75rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.09);
+    }
+    .option-label {
+      font-family: monospace;
+      font-size: 0.82rem;
+      font-weight: bold;
+      color: #2c1810;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.65rem;
+      border-bottom: 2px solid #e0cfc0;
+    }
+
+    /* ── Mock site pieces ── */
+    .mock-header {
+      background:
+        linear-gradient(rgba(50,6,0,0.62), rgba(50,6,0,0.62)),
+        url('https://www.turismo.ra.it/wp-content/uploads/2020/12/ravenna-battistero_neoniano-turismo-comunicattivi-L1120568.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 1.5rem 1.5rem;
+      border-radius: 6px 6px 0 0;
+      text-align: center;
+    }
+    .mock-tabs {
+      display: flex;
+      background: #5c1800;
+      flex-wrap: wrap;
+      border-radius: 0;
+      margin-bottom: 1.25rem;
+    }
+    .mock-tab {
+      color: rgba(255,255,255,0.6);
+      padding: 0.6rem 1.1rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+    .mock-tab.active {
+      color: white;
+      border-bottom: 3px solid #e8b870;
+    }
+    .mock-body { padding: 0 0 0.5rem; }
+    .section-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: #9b7060;
+      margin-bottom: 0.75rem;
+    }
+    .mock-card {
+      border-left: 4px solid #c05020;
+      background: #faf7f2;
+      border-radius: 0 5px 5px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.85rem;
+    }
+
+    /* ── OPTION A: Comfortaa everywhere ── */
+    .opt-a .mock-header h1 { font-family: 'Comfortaa', cursive; font-size: 2rem; font-weight: 700; letter-spacing: 0.04em; }
+    .opt-a .mock-header p  { font-family: 'Comfortaa', cursive; font-size: 0.85rem; margin-top: 0.3rem; opacity: 0.75; font-style: normal; }
+    .opt-a .mock-tab        { font-family: 'Comfortaa', cursive; }
+    .opt-a .mock-card h3   { font-family: 'Comfortaa', cursive; font-size: 1rem; color: #5c1800; font-weight: 700; margin-bottom: 0.4rem; }
+    .opt-a .mock-card p    { font-family: 'Comfortaa', cursive; font-size: 0.88rem; line-height: 1.75; color: #2c1810; }
+    .opt-a .section-label  { font-family: 'Comfortaa', cursive; }
+
+    /* ── OPTION B: Comfortaa headings + Nunito body ── */
+    .opt-b .mock-header h1 { font-family: 'Comfortaa', cursive; font-size: 2rem; font-weight: 700; letter-spacing: 0.04em; }
+    .opt-b .mock-header p  { font-family: 'Nunito', sans-serif; font-size: 0.88rem; margin-top: 0.3rem; opacity: 0.78; font-style: italic; }
+    .opt-b .mock-tab        { font-family: 'Comfortaa', cursive; }
+    .opt-b .mock-card h3   { font-family: 'Comfortaa', cursive; font-size: 1rem; color: #5c1800; font-weight: 700; margin-bottom: 0.4rem; }
+    .opt-b .mock-card p    { font-family: 'Nunito', sans-serif; font-size: 0.93rem; line-height: 1.75; color: #2c1810; }
+    .opt-b .section-label  { font-family: 'Nunito', sans-serif; }
+
+    /* ── OPTION C: Comfortaa headings + Raleway body ── */
+    .opt-c .mock-header h1 { font-family: 'Comfortaa', cursive; font-size: 2rem; font-weight: 700; letter-spacing: 0.04em; }
+    .opt-c .mock-header p  { font-family: 'Raleway', sans-serif; font-size: 0.88rem; margin-top: 0.3rem; opacity: 0.78; font-style: italic; }
+    .opt-c .mock-tab        { font-family: 'Comfortaa', cursive; }
+    .opt-c .mock-card h3   { font-family: 'Comfortaa', cursive; font-size: 1rem; color: #5c1800; font-weight: 700; margin-bottom: 0.4rem; }
+    .opt-c .mock-card p    { font-family: 'Raleway', sans-serif; font-size: 0.92rem; line-height: 1.75; color: #2c1810; }
+    .opt-c .section-label  { font-family: 'Raleway', sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1 class="page-title">Font Preview — romangolo-site</h1>
+  <p class="page-note">Open this file in your browser. You need internet access to load the Google Fonts. Tell Claude which option you like!</p>
+
+  <!-- ── OPTION A ── -->
+  <div class="option opt-a">
+    <div class="option-label">Option A — Comfortaa everywhere (headings + body + tabs)</div>
+    <div class="mock-header">
+      <h1>Romagnolo</h1>
+      <p>Dialetto dell'Emilia-Romagna · Preserving a living voice</p>
+    </div>
+    <div class="mock-tabs">
+      <span class="mock-tab active">Overview</span>
+      <span class="mock-tab">Popular Culture</span>
+      <span class="mock-tab">About</span>
+    </div>
+    <div class="mock-body">
+      <div class="section-label">Overview</div>
+      <div class="mock-card">
+        <h3>What is Romagnolo?</h3>
+        <p>Romagnolo is a Gallo-Italian language from the northeastern part of the Emilia-Romagna region in Italy. It retains its own grammar and vocabulary distinct from standard Italian.</p>
+      </div>
+      <div class="mock-card">
+        <h3>An Endangered Language</h3>
+        <p>Unfortunately, Romagnolo is extremely at risk, classified as endangered by UNESCO. Younger generations have stopped speaking it as a native tongue, especially since the introduction of compulsory schooling in 1947.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── OPTION B ── -->
+  <div class="option opt-b">
+    <div class="option-label">Option B — Comfortaa headings + Nunito body <span class="rec-badge">recommended</span></div>
+    <div class="mock-header">
+      <h1>Romagnolo</h1>
+      <p>Dialetto dell'Emilia-Romagna · Preserving a living voice</p>
+    </div>
+    <div class="mock-tabs">
+      <span class="mock-tab active">Overview</span>
+      <span class="mock-tab">Popular Culture</span>
+      <span class="mock-tab">About</span>
+    </div>
+    <div class="mock-body">
+      <div class="section-label">Overview</div>
+      <div class="mock-card">
+        <h3>What is Romagnolo?</h3>
+        <p>Romagnolo is a Gallo-Italian language from the northeastern part of the Emilia-Romagna region in Italy. It retains its own grammar and vocabulary distinct from standard Italian.</p>
+      </div>
+      <div class="mock-card">
+        <h3>An Endangered Language</h3>
+        <p>Unfortunately, Romagnolo is extremely at risk, classified as endangered by UNESCO. Younger generations have stopped speaking it as a native tongue, especially since the introduction of compulsory schooling in 1947.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── OPTION C ── -->
+  <div class="option opt-c">
+    <div class="option-label">Option C — Comfortaa headings + Raleway body</div>
+    <div class="mock-header">
+      <h1>Romagnolo</h1>
+      <p>Dialetto dell'Emilia-Romagna · Preserving a living voice</p>
+    </div>
+    <div class="mock-tabs">
+      <span class="mock-tab active">Overview</span>
+      <span class="mock-tab">Popular Culture</span>
+      <span class="mock-tab">About</span>
+    </div>
+    <div class="mock-body">
+      <div class="section-label">Overview</div>
+      <div class="mock-card">
+        <h3>What is Romagnolo?</h3>
+        <p>Romagnolo is a Gallo-Italian language from the northeastern part of the Emilia-Romagna region in Italy. It retains its own grammar and vocabulary distinct from standard Italian.</p>
+      </div>
+      <div class="mock-card">
+        <h3>An Endangered Language</h3>
+        <p>Unfortunately, Romagnolo is extremely at risk, classified as endangered by UNESCO. Younger generations have stopped speaking it as a native tongue, especially since the introduction of compulsory schooling in 1947.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
