@@ -1,4 +1,4 @@
-// =============================================================
+﻿// =============================================================
 //  ROMAGNOLO SITE DATA
 // =============================================================
 
@@ -10,10 +10,10 @@ var SITE_DATA = {
     role: "Student and Researcher!",
     photo: "",
     photos: [
-      { url: "images/IMG_5325.JPEG", caption: "Palazzo Malvisi" },
-      { url: "images/IMG_5316.JPEG", caption: "Palazzo Malvisi" },
-      { url: "images/IMG_5318.JPEG", caption: "Palazzo Malvisi" },
-      { url: "images/IMG_5327.JPEG", caption: "Palazzo Malvisi" }
+      { url: "IMG_5325.JPEG", caption: "Palazzo Malvisi" },
+      { url: "IMG_5316.JPEG", caption: "Palazzo Malvisi" },
+      { url: "IMG_5318.JPEG", caption: "Palazzo Malvisi" },
+      { url: "IMG_5327.JPEG", caption: "Palazzo Malvisi" }
     ],
     bio: [
       "Hello, my name is Sibylle Benelli. This project is part of a fellowship (the Leibowitz Language Fellowship) that I was awarded at my high school, National Cathedral School. In my fellowship, I attempted to explore Romagnolo culture and language, while also learning Italian at the Palazzo Malvisi in Ravenna, Italy.",
@@ -176,34 +176,34 @@ var SITE_DATA = {
 
   // -- IMAGES ------------------------------------------------
   images: [
-    { url: "images/IMG_9432.JPEG", caption: "Streets of Ravenna", credit: "", description: "Streets of Ravenna." },
-    { url: "images/IMG_0665.JPEG", caption: "Ricotta ravioli in burro e salvia", credit: "", description: "Local ricotta ravioli in traditional burro e salvia (butter and sage) sauce." },
-    { url: "images/IMG_5240.JPEG", caption: "Pinete of Emilia-Romagna", credit: "", description: "Historic pinete, pine forests, of Emilia-Romagna. These are centuries-old trees that are protected by UNESCO and inspired Dante Alighieri for the Earthly Paradise setting in the Divine Comedy." },
-    { url: "images/IMG_0666.JPEG", caption: "Fusilli Giganti al tono", credit: "", description: "Fusilli Giganti al tono, local tuna pasta with tomato sauce." },
-    { url: "images/IMG_9442.JPEG", caption: "Ravenna's Cathedral", credit: "", description: "View of Ravenna's Cathedral in Piazza Duomo." },
-    { url: "images/IMG_1138.JPEG", caption: "Spaghetti alla chitarra", credit: "", description: "Spaghetti alla chitarra with cicara di mare (mantis shrimp, Italian for sea cicada)." },
-    { url: "images/IMG_5249.JPEG", caption: "Piadina kiosks (chioschi)", credit: "", description: "Piadina kiosks (chioschi)! They mimic old fashioned beach cabins and serve piadina with cold cuts, cheese, and other classical fillings. This one is red and white, but I grew up going to the typical green and white striped ones that line the beach." },
-    { url: "images/IMG_5228.JPEG", caption: "Risotto with regional truffle", credit: "", description: "Risotto with regional truffle." },
-    { url: "images/IMG_9433.JPEG", caption: "Colorful buildings in Ravenna", credit: "", description: "Colorful buildings in Ravenna's center." },
-    { url: "images/IMG_5275.JPEG", caption: "Spaghetti alle cozze", credit: "", description: "Spaghetti alle cozze, mussels!" },
-    { url: "images/IMG_9426.JPEG", caption: "Zucchini fritti", credit: "", description: "Zucchini fritti, or fried zucchini." },
-    { url: "images/IMG_5285.JPEG", caption: "Mercato Coperto, Ravenna", credit: "", description: "Mercato Coperto in the heart of the historic center of Ravenna. This market has been modernized with a new structure since 1922, and currently has a vibrant market inside. This has been an active commercial site for trading since the 5th century (late Roman and medieval eras) and was home to the ancient fisherman's corporation Schola Piscatorum." },
-    { url: "images/IMG_9436.JPEG", caption: "Cappelletti al ragu", credit: "", description: "Cappelletti al ragu. Traditional Romagna stuffed egg pasta (filled with soft cheeses). The name translates to \"little hats\" because of their folded shape. They are often eaten with brodo, or broth, during the wintertime." },
-    { url: "images/IMG_9427.JPEG", caption: "Spiedini Misti", credit: "", description: "Spiedini Misti -- gamberi, sepia, calamari -- Italian seafood skewers." },
-    { url: "images/IMG_5241.JPEG", caption: "Pine trees", credit: "", description: "More beautiful pine trees!" },
-    { url: "images/IMG_9496.JPEG", caption: "Piadina with squacquerone and fichi", credit: "", description: "Piadina with squacquerone (Emilia-Romagna cheese, famous for its delicious pairing with piadina) and fichi (caramelized figs). Another good addition to this combo is typically Prosciutto from Parma." },
-    { url: "images/IMG_5227.JPEG", caption: "Rigatoni with tomato sauce", credit: "", description: "Rigatoni with tomato sauce." },
-    { url: "images/IMG_9474.JPEG", caption: "Fiori di zucca fritti", credit: "", description: "Fiori di zucca fritti, fried squash flowers, a summer delicacy." },
-    { url: "images/IMG_9562.JPEG", caption: "Octopus mosaic, Marina di Ravenna", credit: "", description: "Octopus mosaic in Marina di Ravenna, Ravenna's maritime counterpart." },
-    { url: "images/IMG_9475.JPEG", caption: "Garganelli with ragu and peas", credit: "", description: "Garganelli with ragu and peas." },
-    { url: "images/IMG_9428.JPEG", caption: "Verdura alla griglia", credit: "", description: "Verdura alla griglia, seasonal grilled vegetables." },
-    { url: "images/IMG_5229.JPEG", caption: "Strozzapretti al pomodoro", credit: "", description: "Strozzapretti al pomodoro, hand-rolled pasta shape from Emilia-Romagna which translates literally to \"priest stranglers\" or \"priest chokers.\" The name is rooted in folklore about greedy local clergy eating local food." },
-    { url: "images/IMG_9564.JPEG", caption: "Painted ceiling at Ca de Ven", credit: "", description: "Painted ceiling in Ca de Ven, a traditional restaurant." },
-    { url: "images/IMG_9430.JPEG", caption: "Pizette and spremuta", credit: "", description: "Pizette and spremuta. My unconventional choice of breakfast, yum!" },
-    { url: "images/IMG_9499.JPEG", caption: "Filled pasta", credit: "", description: "Filled pasta." },
-    { url: "images/IMG_9438.JPEG", caption: "Semifreddo al pistachio and tiramisu", credit: "", description: "Semifreddo al pistachio (half frozen dessert) and tiramisu. Lots of delicious desserts here." },
-    { url: "images/IMG_9503.JPEG", caption: "Seafood pasta", credit: "", description: "More seafood pasta!" },
-    { url: "images/IMG_9509.JPEG", caption: "Focaccia from Sunday market", credit: "", description: "Variety of focaccia from local Sunday market." }
+    { url: "IMG_9432.JPEG", caption: "Streets of Ravenna", credit: "", description: "Streets of Ravenna." },
+    { url: "IMG_0665.JPEG", caption: "Ricotta ravioli in burro e salvia", credit: "", description: "Local ricotta ravioli in traditional burro e salvia (butter and sage) sauce." },
+    { url: "IMG_5240.JPEG", caption: "Pinete of Emilia-Romagna", credit: "", description: "Historic pinete, pine forests, of Emilia-Romagna. These are centuries-old trees that are protected by UNESCO and inspired Dante Alighieri for the Earthly Paradise setting in the Divine Comedy." },
+    { url: "IMG_0666.JPEG", caption: "Fusilli Giganti al tono", credit: "", description: "Fusilli Giganti al tono, local tuna pasta with tomato sauce." },
+    { url: "IMG_9442.JPEG", caption: "Ravenna's Cathedral", credit: "", description: "View of Ravenna's Cathedral in Piazza Duomo." },
+    { url: "IMG_1138.JPEG", caption: "Spaghetti alla chitarra", credit: "", description: "Spaghetti alla chitarra with cicara di mare (mantis shrimp, Italian for sea cicada)." },
+    { url: "IMG_5249.JPEG", caption: "Piadina kiosks (chioschi)", credit: "", description: "Piadina kiosks (chioschi)! They mimic old fashioned beach cabins and serve piadina with cold cuts, cheese, and other classical fillings. This one is red and white, but I grew up going to the typical green and white striped ones that line the beach." },
+    { url: "IMG_5228.JPEG", caption: "Risotto with regional truffle", credit: "", description: "Risotto with regional truffle." },
+    { url: "IMG_9433.JPEG", caption: "Colorful buildings in Ravenna", credit: "", description: "Colorful buildings in Ravenna's center." },
+    { url: "IMG_5275.JPEG", caption: "Spaghetti alle cozze", credit: "", description: "Spaghetti alle cozze, mussels!" },
+    { url: "IMG_9426.JPEG", caption: "Zucchini fritti", credit: "", description: "Zucchini fritti, or fried zucchini." },
+    { url: "IMG_5285.JPEG", caption: "Mercato Coperto, Ravenna", credit: "", description: "Mercato Coperto in the heart of the historic center of Ravenna. This market has been modernized with a new structure since 1922, and currently has a vibrant market inside. This has been an active commercial site for trading since the 5th century (late Roman and medieval eras) and was home to the ancient fisherman's corporation Schola Piscatorum." },
+    { url: "IMG_9436.JPEG", caption: "Cappelletti al ragu", credit: "", description: "Cappelletti al ragu. Traditional Romagna stuffed egg pasta (filled with soft cheeses). The name translates to \"little hats\" because of their folded shape. They are often eaten with brodo, or broth, during the wintertime." },
+    { url: "IMG_9427.JPEG", caption: "Spiedini Misti", credit: "", description: "Spiedini Misti -- gamberi, sepia, calamari -- Italian seafood skewers." },
+    { url: "IMG_5241.JPEG", caption: "Pine trees", credit: "", description: "More beautiful pine trees!" },
+    { url: "IMG_9496.JPEG", caption: "Piadina with squacquerone and fichi", credit: "", description: "Piadina with squacquerone (Emilia-Romagna cheese, famous for its delicious pairing with piadina) and fichi (caramelized figs). Another good addition to this combo is typically Prosciutto from Parma." },
+    { url: "IMG_5227.JPEG", caption: "Rigatoni with tomato sauce", credit: "", description: "Rigatoni with tomato sauce." },
+    { url: "IMG_9474.JPEG", caption: "Fiori di zucca fritti", credit: "", description: "Fiori di zucca fritti, fried squash flowers, a summer delicacy." },
+    { url: "IMG_9562.JPEG", caption: "Octopus mosaic, Marina di Ravenna", credit: "", description: "Octopus mosaic in Marina di Ravenna, Ravenna's maritime counterpart." },
+    { url: "IMG_9475.JPEG", caption: "Garganelli with ragu and peas", credit: "", description: "Garganelli with ragu and peas." },
+    { url: "IMG_9428.JPEG", caption: "Verdura alla griglia", credit: "", description: "Verdura alla griglia, seasonal grilled vegetables." },
+    { url: "IMG_5229.JPEG", caption: "Strozzapretti al pomodoro", credit: "", description: "Strozzapretti al pomodoro, hand-rolled pasta shape from Emilia-Romagna which translates literally to \"priest stranglers\" or \"priest chokers.\" The name is rooted in folklore about greedy local clergy eating local food." },
+    { url: "IMG_9564.JPEG", caption: "Painted ceiling at Ca de Ven", credit: "", description: "Painted ceiling in Ca de Ven, a traditional restaurant." },
+    { url: "IMG_9430.JPEG", caption: "Pizette and spremuta", credit: "", description: "Pizette and spremuta. My unconventional choice of breakfast, yum!" },
+    { url: "IMG_9499.JPEG", caption: "Filled pasta", credit: "", description: "Filled pasta." },
+    { url: "IMG_9438.JPEG", caption: "Semifreddo al pistachio and tiramisu", credit: "", description: "Semifreddo al pistachio (half frozen dessert) and tiramisu. Lots of delicious desserts here." },
+    { url: "IMG_9503.JPEG", caption: "Seafood pasta", credit: "", description: "More seafood pasta!" },
+    { url: "IMG_9509.JPEG", caption: "Focaccia from Sunday market", credit: "", description: "Variety of focaccia from local Sunday market." }
   ],
 
   // -- POPULAR CULTURE ---------------------------------------
